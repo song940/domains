@@ -1,0 +1,26 @@
+@import url(https://lsong.org/stylesheets/table.css);
+
+.domains ul {
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
+
+    padding: 0;
+    margin: 0;
+}
+.domains li {
+    display: block;
+    padding: 20px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+}
+
+.domains li:hover {
+    cursor: pointer;
+    background-color: #eee;
+}
+
+@media screen and (max-width: 768px) {
+    .domains ul {
+      grid-template-columns: repeat(1,minmax(0,1fr));
+    }
+  }
